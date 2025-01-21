@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e558425243049645a1c35049b14fe0e, type: 3}
+  m_Name: ItemConfigList
+  m_EditorClassIdentifier: 
+  sheetId: 1QW6NG499_63UXbkoxKqi6HurTKtBfo1cTbQ0S8aXrvk
+  gridId: 0
+  items:
+  - ID: 0
+    Name: None
+    AvatarItem: {fileID: 0}
+    DescriptionItem: 
+    Type: 0
+    Count: 0
+    ItemPotionEnum: 1
+  - ID: 1
+    Name: Potion_0
+    AvatarItem: {fileID: 0}
+    DescriptionItem: wergwterhb
+    Type: 1
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 2
+    Name: Potion_1
+    AvatarItem: {fileID: 0}
+    DescriptionItem: jetyhwrg
+    Type: 2
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 3
+    Name: Potion_2
+    AvatarItem: {fileID: 0}
+    DescriptionItem: brfbvefbnrfgqergqergeqrgqergeqrgeqrgeqrgerg
+    Type: 3
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 4
+    Name: PotionWB_0
+    AvatarItem: {fileID: 0}
+    DescriptionItem: rgb
+    Type: 4
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 5
+    Name: PotionWB_1
+    AvatarItem: {fileID: 0}
+    DescriptionItem: srfghb
+    Type: 5
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 6
+    Name: PotionWB_2
+    AvatarItem: {fileID: 0}
+    DescriptionItem: wrtgn
+    Type: 6
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 7
+    Name: BluePotion_0
+    AvatarItem: {fileID: 0}
+    DescriptionItem: ghd
+    Type: 7
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 8
+    Name: BluePotion_1
+    AvatarItem: {fileID: 0}
+    DescriptionItem: wergwterhb
+    Type: 8
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 9
+    Name: BluePotion_2
+    AvatarItem: {fileID: 0}
+    DescriptionItem: hwrt
+    Type: 9
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 10
+    Name: RedPotion_0
+    AvatarItem: {fileID: 0}
+    DescriptionItem: jtyerg
+    Type: 10
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 11
+    Name: RedPotion_1
+    AvatarItem: {fileID: 0}
+    DescriptionItem: qwegf
+    Type: 11
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 12
+    Name: RedPotion_2
+    AvatarItem: {fileID: 0}
+    DescriptionItem: jeyt
+    Type: 12
+    Count: 1
+    ItemPotionEnum: 0
+  - ID: 13
+    Name: Blood
+    AvatarItem: {fileID: 0}
+    DescriptionItem: Blood
+    Type: 13
+    Count: 1
+    ItemPotionEnum: 1

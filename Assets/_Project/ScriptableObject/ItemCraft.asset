@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e991016eab4e24fa6b62b64b9fc09f, type: 3}
+  m_Name: ItemCraft
+  m_EditorClassIdentifier: 
+  CraftList:
+  - Type: 4
+    AvatarItem: {fileID: 21300000, guid: 5dc665e9a7b078a4fb1caebd880d7d07, type: 3}
+    CraftTrue: 1
+    MaterialsForCraft:
+    - ItemType: 7
+      Sprite: {fileID: 21300000, guid: 4a5c9e9fa5787ea4f9f98a5350eae118, type: 3}
+      Count: 1
+      InStock: 1
+    - ItemType: 10
+      Sprite: {fileID: 21300000, guid: c29972e4a6f47e143a8175ec7cb42ca7, type: 3}
+      Count: 1
+      InStock: 1
+  - Type: 5
+    AvatarItem: {fileID: 21300000, guid: d5845824b92ff0f4baf253b59dac4a4a, type: 3}
+    CraftTrue: 0
+    MaterialsForCraft:
+    - ItemType: 8
+      Sprite: {fileID: 21300000, guid: 32b90c80b39d5e14a9af0fc52b2cf3a2, type: 3}
+      Count: 1
+      InStock: 1
+    - ItemType: 11
+      Sprite: {fileID: 21300000, guid: 5358134edd351f04f9e12b2b6ecac26a, type: 3}
+      Count: 1
+      InStock: 0
+  - Type: 6
+    AvatarItem: {fileID: 21300000, guid: 020d1a190f058324ca533c17fe6b590f, type: 3}
+    CraftTrue: 0
+    MaterialsForCraft:
+    - ItemType: 9
+      Sprite: {fileID: 21300000, guid: 189a0371c06884d4ea010b5d497ddd61, type: 3}
+      Count: 1
+      InStock: 0
+    - ItemType: 12
+      Sprite: {fileID: 21300000, guid: a31a53add80068649bc8ab0070ad6acd, type: 3}
+      Count: 1
+      InStock: 0
