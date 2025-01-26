@@ -23,6 +23,7 @@ public class GameSceneContextIn : MonoInstaller
     public DataAddItems _dataAddItems;
     public Entity EnemyPrefab;
     public EventDeathPlayer EventDeathPlayer;
+    public CubeArea CubeAreaObj;
 
     public override void InstallBindings()
     {  
@@ -52,9 +53,10 @@ public class GameSceneContextIn : MonoInstaller
 
         DataAddItem();
 
-        EnemyObject(); 
-    }
+        EnemyObject();
 
+        CubeAreaObject();
+    }
      
     public void PlayerCamera()
     {
@@ -112,5 +114,10 @@ public class GameSceneContextIn : MonoInstaller
     public void EventDeathPlayerObject()
     {
         Container.Bind<EventDeathPlayer>().FromInstance(EventDeathPlayer).AsSingle().NonLazy();
+    }
+     
+    public void CubeAreaObject()
+    {
+        Container.Bind<CubeArea>().FromInstance(CubeAreaObj).AsSingle().NonLazy();
     }
 } 

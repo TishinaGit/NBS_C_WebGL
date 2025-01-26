@@ -5,60 +5,39 @@ using Zenject;
 
 public class ScoreInTrigger : MonoBehaviour
 { 
-    [SerializeField] private GameObject _portal;
-    private float _score;
-    public Collider _playerCollider;
+    [SerializeField] private GameObject _portalHome;
+    [SerializeField] private GameObject _portalNextGame;
+
     private TMP_Text _uiScoreText;
 
-    private IEnumerator metodScore;
-    private bool _isTrigger;
+    private float _score = 0f; 
 
     [Inject]
-    public void Construct(Collider PlayerCollider, TMP_Text UIScoreText)
-    {
-        _playerCollider = PlayerCollider;
+    public void Construct(TMP_Text UIScoreText)
+    { 
         _uiScoreText = UIScoreText;
-    }
-
-    private void Start()
-    {
-         metodScore = Scoreplus();
-    }
-
-    private void Update()
-    {
-        if (_isTrigger == true)
-        {
-            _score += 10 * Time.deltaTime;
-        }
-    }
-
+    } 
+ 
     private void OnTriggerStay(Collider other)
     { 
-        StartCoroutine(metodScore); 
-        _isTrigger = true;
+        StartCoroutine(Scoreplus());  
     }
-
-    private void OnTriggerExit(Collider other)
-    { 
-        StopCoroutine(metodScore); 
-        _isTrigger = false;
-    }
-
+     
     private IEnumerator Scoreplus()
-    { 
-        while (_score < 101)
+    {
+        if (_score >= 100)
         {
-            _isTrigger = true;
+            _portalNextGame.SetActive(true);
+            _portalHome.SetActive(true);
+        }
+
+        while (_score <= 100)
+        {
+            _score += 0.01f * Time.deltaTime;
             var integer = (int)_score;
             _uiScoreText.text = "Активация портала: " + integer.ToString() + "%";
-            if (_score >= 100)
-            {
-                Debug.Log("1");
-                _isTrigger = false;
-                _portal.SetActive(true); 
-            }
             yield return null;
-        }
+        } 
     }
+     
 }

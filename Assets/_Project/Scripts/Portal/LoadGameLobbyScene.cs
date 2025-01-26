@@ -9,10 +9,15 @@ public class LoadGameLobbyScene : MonoBehaviour
         {
             if (other != null)
             {
-                SceneManager.LoadScene(2);
+                BTN_SceneLobbyLoad();
             }
         }
 
+    }
+
+    public void BTN_SceneLobbyLoad()
+    {
+        SceneManager.LoadScene(1);
     }
 
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 99da60c924f8353478c6e3032c62ec50
   m_currentHash:
     serializedVersion: 2
-    Hash: 3da80b5e68480ad7db6cac159ad4a0fc
+    Hash: 6cc8a4121f30ccbb8c91ca015a7498af
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
@@ -35,9 +35,9 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 746aa4214cc8d6e47afac97608188b9a
+    m_Id: 8d68723be168a7743aef349d185830ff
   m_RemoteCatalogLoadPath:
-    m_Id: 28b549f1ef655e34cb6aaa8ed82a4355
+    m_Id: f2a15f1c9b8891f4f956bb382f779ded
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
@@ -66,7 +66,7 @@ MonoBehaviour:
       - m_Id: 746aa4214cc8d6e47afac97608188b9a
         m_Value: ServerData/[BuildTarget]
       - m_Id: 28b549f1ef655e34cb6aaa8ed82a4355
-        m_Value: https://tishina.hb.ru-msk.vkcloud-storage.ru/StandaloneWindows64/[BuildTarget]
+        m_Value: https://storage.yandexcloud.net/nbs/[BuildTarget]/
     m_ProfileEntryNames:
     - m_Id: 6e5de52c54bbd3c40a019ab0eaf21cec
       m_Name: BuildTarget
@@ -105,5 +105,6 @@ MonoBehaviour:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
     m_NextInstanceId: 0
-    m_RegisteredServiceTypeRefs: []
+    m_RegisteredServiceTypeRefs:
+    - UnityEditor.AddressableAssets.HostingServices.HttpHostingService, Unity.Addressables.Editor
     m_PingTimeoutInMilliseconds: 5000

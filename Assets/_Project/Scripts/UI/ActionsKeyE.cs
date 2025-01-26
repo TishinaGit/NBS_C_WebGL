@@ -50,5 +50,5 @@ public class ActionsKeyE : MonoBehaviour
 
             _canvasOpenAndClose.CloseCanvas(IndexGameObject);
         }
-    } 
+    }  
 }

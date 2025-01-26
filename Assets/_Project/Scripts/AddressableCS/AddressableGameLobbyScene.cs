@@ -22,7 +22,7 @@ public class AddressableGameLobbyScene : MonoBehaviour
 {
     private void Awake()
     {
-        Addressables.LoadResourceLocationsAsync("Json", typeof(TextAsset)).Completed += LoadResourceAsync;  
+        //Addressables.LoadResourceLocationsAsync("Json", typeof(TextAsset)).Completed += LoadResourceAsync;  
     }
     
     private void LoadResourceAsync(AsyncOperationHandle<IList<IResourceLocation>> obj)

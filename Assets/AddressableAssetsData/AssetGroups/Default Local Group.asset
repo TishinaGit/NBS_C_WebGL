@@ -27,11 +27,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c61ff27f3ca482e4185522b57caebfd5
-    m_Address: Atlar
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a231ba52e820d0a4a94fa8d284ffb63c
     m_Address: GameSceneDesign
     m_ReadOnly: 0
@@ -41,18 +36,6 @@ MonoBehaviour:
     m_Address: GameSceneLevel
     m_ReadOnly: 0
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0053104a8ddca6c44a4e1ccb5c614679
-    m_Address: Data.Inventory.InventoryStates
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Json
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 17c989d7374e9af4ca0f14f839912736
-    m_Address: JsonEditorLoader
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Json
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ba675714c89c2624d898e6b7e69d2e68, type: 2}

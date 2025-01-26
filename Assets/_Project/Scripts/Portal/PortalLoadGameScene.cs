@@ -3,13 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class PortalLoadGameScene : MonoBehaviour
 {
+    [SerializeField] private int _level;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             if (other != null)
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(_level);
             }
         }
        

@@ -1,23 +1,28 @@
-﻿using UnityEngine;
+﻿using Controller;
+using UnityEngine;
+using Zenject;
 
 
 public class AIDrone : MonoBehaviour
-{
-    [SerializeField] private CubeArea _movementArea;
+{ 
     [SerializeField] private float _angryDistance;
-   
-
-    private Drone _drone;
+    [SerializeField] private Drone _drone;
+    
+    public Transform _shootTarget;
+    
     private Vector3 _movementPosition;
-    private Transform _shootTarget;
-    private Transform _player;
+    public Transform _player;
+    public CubeArea _movementArea;
+
+    [Inject] public void Construct(PlayerController PlayerPrefab, CubeArea cubeAreaObj)
+    {
+        _player = PlayerPrefab.transform;
+        _movementArea = cubeAreaObj;
+    }
 
     private void Start()
-    {
-        _drone = GetComponent<Drone>();
-        _drone.EventOnDeath.AddListener(OnDroneDeath);
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
-        _movementArea = FindAnyObjectByType<CubeArea>();
+    { 
+        _drone.EventOnDeath.AddListener(OnDroneDeath);  
     }
 
     private void OnDestroy()

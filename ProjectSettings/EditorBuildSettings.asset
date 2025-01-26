@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/EntryPoint.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/_Project/Scenes/MainMenu.unity
-    guid: 43520acc6db146641abf6b35e805a467
-  - enabled: 1
     path: Assets/_Project/Scenes/GameLobbyLvl_00.unity
     guid: 2c27fbd1ed6a0ad43a970c777aad4213
   - enabled: 1

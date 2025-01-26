@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1269255638027354682}
   - component: {fileID: 5684959008357169925}
   - component: {fileID: 8378305877231795694}
-  - component: {fileID: 8733776866032457465}
   - component: {fileID: 7402187241021326247}
   - component: {fileID: -924189271029266828}
+  - component: {fileID: 7524372250562677656}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -86,29 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8733776866032457465
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8116327791518150551}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!96 &7402187241021326247
 TrailRenderer:
   serializedVersion: 3
@@ -238,3 +215,24 @@ MonoBehaviour:
   _velocity: 30
   _lifeTime: 2
   _damage: 5
+--- !u!65 &7524372250562677656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116327791518150551}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4908987, y: 2.484794, z: 1.0000005}
+  m_Center: {x: 0.024524182, y: -0.06587449, z: -0.0000000745058}

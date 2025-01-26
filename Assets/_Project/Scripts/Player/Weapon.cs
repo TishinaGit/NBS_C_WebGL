@@ -25,9 +25,7 @@ public class Weapon : MonoBehaviour
     private Destructible _owner;
 	 
     private void Start()
-	{
-		//_primaryEnergy = _primaryMaxEnergy;
-
+	{  
 		_owner = transform.root.GetComponent<Destructible>(); 
 	}
 

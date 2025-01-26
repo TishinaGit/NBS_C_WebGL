@@ -1,5 +1,4 @@
-using Inventory;
-using System;
+using Inventory; 
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -11,7 +10,7 @@ public class TakeBlood : MonoBehaviour
     [SerializeField] private Image _bloodSprite;
     [SerializeField] private TMP_Text _textCount;
     [SerializeField] private Sprite _emptySprite;
-
+    [SerializeField] private Button _takeButton;
     [SerializeField] private Image _uiWaterScales;
 
     private InventoryPanel _inventoryPanel;
@@ -26,8 +25,10 @@ public class TakeBlood : MonoBehaviour
      
     private void OnEnable()
     {
+        _takeButton.enabled = false;
         SearchBloodInCell();
         _uiWaterScales.fillAmount = PlayerPrefs.GetFloat("ScaleImage", _uiWaterScales.fillAmount);
+        
     }
 
     private void OnDisable()
@@ -41,9 +42,10 @@ public class TakeBlood : MonoBehaviour
         for (int i = 0; i < _cell.Count; i++)
         {
             if (_cell[i].CurrentData.Type == ItemTypeEnum.Blood)
-            {  
+            {
+                _takeButton.enabled = true;
                 _bloodSprite.sprite = _cell[i].CurrentData.AvatarItem;
-                _textCount.text = _cell[i].CurrentData.Count.ToString(); 
+                _textCount.text = _cell[i].CurrentData.Count.ToString();  
             } 
         }
     } 
@@ -74,6 +76,7 @@ public class TakeBlood : MonoBehaviour
                 {
                     _bloodSprite.sprite = _emptySprite;
                     _textCount.text = " ";
+                    _takeButton.enabled = false;
                 }
             }
         }

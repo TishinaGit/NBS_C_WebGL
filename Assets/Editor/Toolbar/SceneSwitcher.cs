@@ -1,8 +1,6 @@
-﻿using System;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.SceneManagement;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine; 
 
 namespace UnityToolbarExtender.Examples
 {
@@ -43,18 +41,13 @@ namespace UnityToolbarExtender.Examples
 			{
 				//SceneHelper.OpenLastLaunchScene();
 				SceneHelper.OpenScene("EntryPoint");
-			}
-			if(GUILayout.Button(new GUIContent("2", "MainMenu"), ToolbarStyles.commandButtonStyle))
-			{
-				//SceneHelper.OpenLastLaunchScene();
-				SceneHelper.OpenScene("MainMenu");
-			}
-            if (GUILayout.Button(new GUIContent("3", "GameLobbyLvl_00"), ToolbarStyles.commandButtonStyle))
+			} 
+            if (GUILayout.Button(new GUIContent("2", "GameLobbyLvl_00"), ToolbarStyles.commandButtonStyle))
             {
                 //SceneHelper.OpenLastLaunchScene();
                 SceneHelper.OpenScene("GameLobbyLvl_00");
             }
-            if (GUILayout.Button(new GUIContent("4", "GameScene_LvlOne"), ToolbarStyles.commandButtonStyle))
+            if (GUILayout.Button(new GUIContent("3", "GameScene_LvlOne"), ToolbarStyles.commandButtonStyle))
             {
                 //SceneHelper.OpenLastLaunchScene();
                 SceneHelper.OpenScene("GameScene_LvlOne");
